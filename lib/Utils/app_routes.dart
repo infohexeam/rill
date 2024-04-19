@@ -1,0 +1,31 @@
+abstract class Routes {
+  static const splash = '/';
+  static const authentication = '/auth';
+  static const onboarding = '/onboarding';
+  static const login = '/login';
+  static const otpverify = '/otpverify';
+  // static const emailverify='/emailverify';
+  static const signup = '/signup';
+  static const homescreen = '/homescreen';
+  static const profilescreen = '/profilescreen';
+  static const notificationscreen = '/notificationscreen';
+  static const kycscreen1 = '/kycscreen1';
+  static const kycscreen2 = '/kycscreen2';
+  static const personaldetails = '/personaldetails';
+  static const paymentmethod = '/paymentmethod';
+  static const onlinepayment = '/onlinepayment';
+  static const paymentsuccess = '/paymentsuccess';
+  static const foundersclub = '/foundersclub';
+  static const updatekyc = '/updatekyc';
+  static const investmentplan = '/investmentplan';
+  static const paymentmodeRfc = '/paymentmodeRfc';
+  static const paymentmodeRpc = '/paymentmodeRpc';
+  static const viewinvestment = '/viewinvestment';
+  static const clubdetails = '/clubdetails';
+  static const clubdetailsRpc = '/clubdetailsRpc';
+  static const invoicescreen = '/invoicescreen';
+  static const torfcOneTime = '/torfcOneTime';
+  static const torpcOneTime = '/torpcOneTime';
+  static const torfcInstallments = '/torfcInstallments';
+  static const torpcInstallments = '/torpcInstallments';
+}

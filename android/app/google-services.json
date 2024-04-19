@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "736842364306",
+    "project_id": "rill-hospital-5d9c5",
+    "storage_bucket": "rill-hospital-5d9c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736842364306:android:8e2af094e6e3a088313d4b",
+        "android_client_info": {
+          "package_name": "com.rill.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736842364306-n5fm2q53df460oi67jn4eveef9km474h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rill.app",
+            "certificate_hash": "427c59b5ee910450a9df9cfc44b6211140cc3f15"
+          }
+        },
+        {
+          "client_id": "736842364306-bveats44lbh95meui92kud6f23s11lb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrTgxYsbBL_yUAbfJxlbQfC00IplnixKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736842364306-bveats44lbh95meui92kud6f23s11lb2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736842364306-1bhbdtul0ng1dohcg732qjraoib9c2pg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rill.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

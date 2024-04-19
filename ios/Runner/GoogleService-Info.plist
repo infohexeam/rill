@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>736842364306-1bhbdtul0ng1dohcg732qjraoib9c2pg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.736842364306-1bhbdtul0ng1dohcg732qjraoib9c2pg</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>736842364306-n5fm2q53df460oi67jn4eveef9km474h.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDpa_kUOU3yPxqzGvBVcmfkPjxy8DXLQNI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>736842364306</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rill.app</string>
+	<key>PROJECT_ID</key>
+	<string>rill-hospital-5d9c5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rill-hospital-5d9c5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:736842364306:ios:a59ff9c79e98dfc8313d4b</string>
+</dict>
+</plist>

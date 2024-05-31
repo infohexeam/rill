@@ -60,7 +60,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
             ),
           ),
         ),
-        body: Container(
+        body: SizedBox(
           height: size.height,
           child: Stack(
             children: [
@@ -308,7 +308,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                                   InkWell(
                                     onTap: () {
                                       setState(() {
-                                        if (logic.payments!.isEmpty) {
+                                        if (logic.payments.isEmpty) {
                                           // logic.addTypes('${date.day}-${date.month}-${date.year}', privilegecontroller.privilegecardexistModel?.data.privileCardExists==true?'Rs. 10500':   'Rs. 12500');
                                           logic.addRfc(
                                               '${date.year}-${date.month}-${date.day}',
@@ -377,7 +377,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                       SizedBox(
                         height: size.height * .2,
                         child: ListView.builder(
-                            itemCount: logic.payments!.length == 0 ? 0 : 1,
+                            itemCount: logic.payments.isEmpty ? 0 : 1,
                             physics: const NeverScrollableScrollPhysics(),
                             itemBuilder: (BuildContext context, index) {
                               return Padding(
@@ -417,7 +417,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                                                               FontWeight
                                                                   .normal)),
                                                   Text(
-                                                      logic.payments![index]
+                                                      logic.payments[index]
                                                               .dateChange() ??
                                                           '',
                                                       style:
@@ -431,7 +431,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                                                 height: 10,
                                               ),
                                               Text(
-                                                  logic.payments?[index].amount
+                                                  logic.payments[index].amount
                                                           .toString() ??
                                                       '',
                                                   style: Constants.customStyle(
@@ -472,7 +472,7 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                               );
                             }),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       )
                     ],
@@ -486,8 +486,8 @@ class _RfcOneTimeState extends State<RfcOneTime> {
                         padding: const EdgeInsets.only(bottom: 20),
                         child: InkWell(
                             onTap: () {
-                              print("Amount :::: ${logic.payments![0].amount}");
-                              print("date :::: ${logic.payments![0].date}");
+                              print("Amount :::: ${logic.payments[0].amount}");
+                              print("date :::: ${logic.payments[0].date}");
                               logic.rfcSingle(
                                   context,
                                   '${date.year}-${date.month}-${date.day}',

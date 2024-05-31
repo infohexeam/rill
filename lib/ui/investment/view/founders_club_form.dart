@@ -51,7 +51,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
         body: Padding(
           padding: const EdgeInsets.only(left: 15, right: 15),
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: GetBuilder<PrivilegeCardController>(
               builder: (logic) {
                 return Column(
@@ -98,7 +98,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                             'Full name',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -133,7 +133,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                             'Father\'s name',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -169,7 +169,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                             'Address',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -208,7 +208,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                             'Pin number',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -243,7 +243,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                                       BorderRadius.circular(5),
                                                   border: Border.all(
                                                       color:
-                                                          Color(0xffBBBBBB))),
+                                                          const Color(0xffBBBBBB))),
                                               child: Padding(
                                                 padding: const EdgeInsets.only(
                                                     left: 15),
@@ -265,7 +265,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                                       style:
                                                           Constants.customStyle(
                                                               16.0,
-                                                              Color(0xff888888),
+                                                              const Color(0xff888888),
                                                               FontWeight
                                                                   .normal),
                                                     ),
@@ -282,7 +282,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                             child: TextFormField(
                                               style: Constants.customStyle(
                                                   16.0,
-                                                  Color(0xff888888),
+                                                  const Color(0xff888888),
                                                   FontWeight.normal),
                                               // controller:
                                               //     logic.countryController,
@@ -298,7 +298,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                                 hintStyle:
                                                     Constants.customStyle(
                                                         16.0,
-                                                        Color(0xff888888),
+                                                        const Color(0xff888888),
                                                         FontWeight.normal),
                                                 enabledBorder: OutlineInputBorder(
                                                     borderRadius:
@@ -342,7 +342,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                               'DOB (DD/MM/YY)',
                                           hintStyle: Constants.customStyle(
                                               16.0,
-                                              Color(0xff888888),
+                                              const Color(0xff888888),
                                               FontWeight.normal),
                                           helperText: '',
                                           enabledBorder: OutlineInputBorder(
@@ -585,7 +585,7 @@ class _FoundersClubScreenState extends State<FoundersClubScreen> {
                                               'Full name',
                                           hintStyle: Constants.customStyle(
                                               16.0,
-                                              Color(0xff888888),
+                                              const Color(0xff888888),
                                               FontWeight.normal),
                                           enabledBorder: OutlineInputBorder(
                                               borderRadius:

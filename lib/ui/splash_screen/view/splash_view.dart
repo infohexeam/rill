@@ -5,12 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rill_repository/Utils/app_routes.dart';
 import 'package:rill_repository/Utils/colors_list.dart';
-import 'package:rill_repository/ui/splash_screen/bind/splash_binding.dart';
 
 import '../../../Utils/com_binding.dart';
 import '../../../Utils/session_keys.dart';
 import '../../../constants/constant.dart';
-import '../model/firebase_token_model.dart';
 
 Future _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   print("Handling a background message: ${message.messageId}");

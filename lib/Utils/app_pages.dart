@@ -133,7 +133,7 @@ abstract class AppPages {
         binding: InvestmentFormBinding()),
     GetPage(
         name: Routes.clubdetails,
-        page: () => ClubDetailsScreen(),
+        page: () => const ClubDetailsScreen(),
         binding: InvestmentFormBinding()),
     GetPage(
         name: Routes.clubdetailsRpc,

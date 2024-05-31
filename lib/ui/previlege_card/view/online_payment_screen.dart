@@ -19,7 +19,7 @@ class _OnlinePaymentScreenState extends State<OnlinePaymentScreen> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: Constants.commonAppBar(
-          title: 'Online Payment', icon: Icon(Icons.arrow_back, size: 30)),
+          title: 'Online Payment', icon: const Icon(Icons.arrow_back, size: 30)),
       body:
           Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Padding(

@@ -1,24 +1,24 @@
 class OtpReceiveModel {
   OtpReceiveModel({
-     this.message,
-     this.isError,
-     this.data,
+    this.message,
+    this.isError,
+    this.data,
   });
-   String? message;
-   bool? isError;
-   Data? data;
-  
-  OtpReceiveModel.fromJson(Map<String, dynamic> json){
+  String? message;
+  bool? isError;
+  Data? data;
+
+  OtpReceiveModel.fromJson(Map<String, dynamic> json) {
     message = json['message'];
-    isError = json['isError']??true;
-    data = Data.fromJson(json['data']??{});
+    isError = json['isError'] ?? true;
+    data = Data.fromJson(json['data'] ?? {});
   }
 
   Map<String, dynamic> toJson() {
     final _data = <String, dynamic>{};
     _data['message'] = message;
     _data['isError'] = isError;
-    _data['data'] = data?.toJson()??{};
+    _data['data'] = data?.toJson();
     return _data;
   }
 }
@@ -32,8 +32,8 @@ class Data {
   late final String? phone;
   late final String? id;
   late final String? otp;
-  
-  Data.fromJson(Map<String, dynamic> json){
+
+  Data.fromJson(Map<String, dynamic> json) {
     phone = json['phone'];
     id = json['id'];
     otp = json['otp'];

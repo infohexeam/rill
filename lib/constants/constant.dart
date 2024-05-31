@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:rill_repository/Utils/colors_list.dart';
 import 'package:rill_repository/ui/investment/bind/investment_form_binding.dart';
 import 'package:rill_repository/ui/kyc_form/bind/kyc_form_binding.dart';

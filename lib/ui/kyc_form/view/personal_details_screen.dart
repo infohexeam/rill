@@ -50,7 +50,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
         body: Padding(
           padding: const EdgeInsets.only(left: 15, right: 15),
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: GetBuilder<PrivilegeCardController>(
               builder: (logic) {
                 return Column(
@@ -97,7 +97,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             'Full name',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -136,13 +136,13 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             '+91 | ',
                                             style: Constants.customStyle(
                                                 16.0,
-                                                Color(0xff888888),
+                                                const Color(0xff888888),
                                                 FontWeight.normal),
                                           ),
                                         ),
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -177,7 +177,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             'Father\'s name',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -215,7 +215,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                               'DOB (DD/MM/YY)',
                                           hintStyle: Constants.customStyle(
                                               16.0,
-                                              Color(0xff888888),
+                                              const Color(0xff888888),
                                               FontWeight.normal),
                                           helperText: '',
                                           enabledBorder: OutlineInputBorder(
@@ -254,7 +254,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             'Address',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -293,7 +293,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             'Pin code',
                                         hintStyle: Constants.customStyle(
                                             16.0,
-                                            Color(0xff888888),
+                                            const Color(0xff888888),
                                             FontWeight.normal),
                                         enabledBorder: OutlineInputBorder(
                                             borderRadius:
@@ -328,7 +328,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                                       BorderRadius.circular(5),
                                                   border: Border.all(
                                                       color:
-                                                          Color(0xffBBBBBB))),
+                                                          const Color(0xffBBBBBB))),
                                               child: Padding(
                                                 padding: const EdgeInsets.only(
                                                     left: 15),
@@ -350,7 +350,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                                       style:
                                                           Constants.customStyle(
                                                               16.0,
-                                                              Color(0xff888888),
+                                                              const Color(0xff888888),
                                                               FontWeight
                                                                   .normal),
                                                     ),
@@ -367,7 +367,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                             child: TextFormField(
                                               style: Constants.customStyle(
                                                   16.0,
-                                                  Color(0xff888888),
+                                                  const Color(0xff888888),
                                                   FontWeight.normal),
                                               readOnly: true,
                                               decoration: InputDecoration(
@@ -381,7 +381,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                                 hintStyle:
                                                     Constants.customStyle(
                                                         16.0,
-                                                        Color(0xff888888),
+                                                        const Color(0xff888888),
                                                         FontWeight.normal),
                                                 enabledBorder: OutlineInputBorder(
                                                     borderRadius:
@@ -626,7 +626,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                               'Full name',
                                           hintStyle: Constants.customStyle(
                                               16.0,
-                                              Color(0xff888888),
+                                              const Color(0xff888888),
                                               FontWeight.normal),
                                           enabledBorder: OutlineInputBorder(
                                               borderRadius:
@@ -711,13 +711,13 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                               '+91 | ',
                                               style: Constants.customStyle(
                                                   16.0,
-                                                  Color(0xff888888),
+                                                  const Color(0xff888888),
                                                   FontWeight.normal),
                                             ),
                                           ),
                                           hintStyle: Constants.customStyle(
                                               16.0,
-                                              Color(0xff888888),
+                                              const Color(0xff888888),
                                               FontWeight.normal),
                                           enabledBorder: OutlineInputBorder(
                                               borderRadius:

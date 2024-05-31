@@ -40,7 +40,7 @@ class _ClubDetailsScreenState extends State<ClubDetailsScreen> {
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: GetBuilder<InvestmentFormController>(builder: (logic) {
-              return SingleChildScrollView(physics:  BouncingScrollPhysics(),
+              return SingleChildScrollView(physics:  const BouncingScrollPhysics(),
                 // physics: ScrollPhysics(),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,

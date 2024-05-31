@@ -1,14 +1,8 @@
-import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_custom_utils/flutter_custom_utils.dart';
 import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:rill_repository/Utils/app_routes.dart';
-import 'package:rill_repository/ui/splash_screen/view/splash_view.dart';
-import '../../../Utils/com_binding.dart';
-import '../../../Utils/network_handler.dart';
-import '../../../Utils/session_keys.dart';
 
 class AuthBinding implements Bindings {
   @override
@@ -50,7 +44,7 @@ class AuthController extends GetxController {
         // Navigator.pop(context);
       }
 
-    } on PlatformException catch (e) {
+    } on PlatformException {
       msg = "Error while opening fingerprint/face scanner";
     }
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:rill_repository/Utils/app_routes.dart';
 import 'package:rill_repository/Utils/colors_list.dart';
 import 'package:rill_repository/constants/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -60,7 +59,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ),
         body: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

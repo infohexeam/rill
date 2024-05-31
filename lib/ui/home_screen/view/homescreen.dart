@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 CustomScrollView(
                   shrinkWrap: true,
-                  physics:  ScrollPhysics(),
+                  physics:  const ScrollPhysics(),
                   slivers: [
                     SliverAppBar(toolbarHeight: 70,
                       forceElevated: true,

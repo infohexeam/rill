@@ -1,14 +1,10 @@
-import 'dart:convert';
 
 import 'package:flutter_custom_utils/flutter_custom_utils.dart';
 import 'package:get/get.dart';
 import 'package:rill_repository/Utils/app_routes.dart';
 
 import '../../../Utils/com_binding.dart';
-import '../../../Utils/network_handler.dart';
 import '../../../Utils/session_keys.dart';
-import '../../investment/model/common_model.dart';
-import '../model/firebase_token_model.dart';
 
 class SplashBinding implements Bindings {
   @override
@@ -19,6 +15,7 @@ class SplashBinding implements Bindings {
 
 class splashController extends GetxController {
   static splashController get to => Get.find();
+  @override
   void onInit() {
     super.onInit();
 

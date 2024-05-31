@@ -34,7 +34,7 @@ class _PaymentModeScreenRfcState extends State<PaymentModeScreenRfc> {
               height: 200,
               width: size.width,
               padding: EdgeInsets.zero,
-              margin: EdgeInsets.only(top: 20,left: 20,right: 20),
+              margin: const EdgeInsets.only(top: 20,left: 20,right: 20),
               child: Image.asset("assets/images/member.png",fit: BoxFit.fill),),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,

@@ -17,12 +17,14 @@ void main() async{
   // runApp(MyApp());
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp,DeviceOrientation.portraitDown])
-      .then((_) { runApp(MyApp());},
+      .then((_) { runApp(const MyApp());},
   );
 }
 
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -54,7 +56,7 @@ class _MyAppState extends State<MyApp> {
           builder: (context, child) {
             return MediaQuery(
               data: mQuery(context).copyWith(
-                textScaleFactor: context.cIsTablet ? 1.2 : 1.0,
+                textScaler: TextScaler.linear(context.cIsTablet ? 1.2 : 1.0),
               ),
               child: child ?? const Text('error'),
             );

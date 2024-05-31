@@ -21,7 +21,7 @@ class _SignupScreenState extends State<SignupScreen> {
   bool _checkbox = false;
   @override
   Widget build(BuildContext context) {
-    Future<void> _launchInBrowser(String url) async {
+    Future<void> launchInBrowser(String url) async {
       if (!await launch(
         url,
         forceSafariVC: false,
@@ -233,7 +233,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       InkWell(
                           onTap: () {
-                            _launchInBrowser('https://rillhospital.d5n.in/terms-condition.html');
+                            launchInBrowser('https://rillhospital.d5n.in/terms-condition.html');
                           },
                           child: const Text(
                             ' Terms & Conditions.',

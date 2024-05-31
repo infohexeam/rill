@@ -108,7 +108,7 @@ class KycFormController extends GetxController {
       print("pinCode:::${pinControler.text}");
       print("state:::${theChangedValue.value}");
       print("country:::${'INDIA'}");
-      print("relation:::${nomineeRelationValue}");
+      print("relation:::$nomineeRelationValue");
       print("nomineeName:::${nomineeFnameController.text}");
       //Api Call
       var response = await NetWorkHandler.putToken(
@@ -163,7 +163,7 @@ class KycFormController extends GetxController {
       print("pinCode:::${pinControler.text}");
       print("state:::${theChangedValue.value}");
       print("country:::${'INDIA'}");
-      print("relation:::${nomineeRelationValue}");
+      print("relation:::$nomineeRelationValue");
       print("nomineeName:::${nomineeFnameController.text}");
       //Api Call
       var response = await NetWorkHandler.putToken(

@@ -1,11 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
-import 'package:rill_repository/ui/authentication/auth_binding.dart';
-import 'package:rill_repository/ui/splash_screen/view/splash_view.dart';
 
 import '../../Utils/app_routes.dart';
 import '../../Utils/colors_list.dart';
@@ -63,7 +59,7 @@ class _AuthenticationState extends State<Authentication> {
         // Navigator.pop(context);
       }
 
-    } on PlatformException catch (e) {
+    } on PlatformException {
       msg = "Error while opening fingerprint/face scanner";
     }
 

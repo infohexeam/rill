@@ -51,7 +51,7 @@ class _PaymentModeScreenRpcState extends State<PaymentModeScreenRpc> {
                         GetBuilder<PrivilegeCardController>(builder: (logic) {
                       return Container(
                         padding: const EdgeInsets.all(0),
-                        margin: EdgeInsets.only(top: 15),
+                        margin: const EdgeInsets.only(top: 15),
                         height: 200,
                         width: size.width,
                         decoration: const BoxDecoration(
@@ -128,7 +128,7 @@ class _PaymentModeScreenRpcState extends State<PaymentModeScreenRpc> {
                                                 else if (int.tryParse(value) == null || int.parse(value) < 10000) {
                                                   return 'Amount must be at least 10,000';
                                                 }
-                                                int n = int.parse(value!);
+                                                int n = int.parse(value);
                                                 int multipleOf = 10000;
 
                                                 return n % multipleOf != 0

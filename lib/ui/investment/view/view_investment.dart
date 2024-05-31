@@ -93,7 +93,7 @@ class _ViewInvestmentScreenState extends State<ViewInvestmentScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 30,),
+              const SizedBox(height: 30,),
               InkWell(
                 onTap: () {
                   if (logic.investmentStatusModel?.data.rfc == true) {

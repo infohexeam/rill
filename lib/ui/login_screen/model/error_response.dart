@@ -15,11 +15,11 @@ class ErrorResponse {
   }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['message'] = message;
-    _data['error'] = error;
-    _data['errors'] = errors!.map((e)=>e.toJson()).toList()??[];
-    return _data;
+    final data = <String, dynamic>{};
+    data['message'] = message;
+    data['error'] = error;
+    data['errors'] = errors!.map((e)=>e.toJson()).toList()??[];
+    return data;
   }
 }
 
@@ -43,11 +43,11 @@ class Errors {
   }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['value'] = value;
-    _data['msg'] = msg;
-    _data['param'] = param;
-    _data['location'] = location;
-    return _data;
+    final data = <String, dynamic>{};
+    data['value'] = value;
+    data['msg'] = msg;
+    data['param'] = param;
+    data['location'] = location;
+    return data;
   }
 }

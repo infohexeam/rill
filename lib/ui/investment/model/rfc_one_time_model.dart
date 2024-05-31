@@ -11,9 +11,9 @@ class RfcOneTimeMode {
   }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['payments'] = payments?.map((e)=>e.toJson()).toList();
-    return _data;
+    final data = <String, dynamic>{};
+    data['payments'] = payments?.map((e)=>e.toJson()).toList();
+    return data;
   }
 }
 
@@ -42,9 +42,9 @@ class RfcPayments {
     return actualDate.toString();
   }
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['amount'] = amount;
-    _data['date'] = date;
-    return _data;
+    final data = <String, dynamic>{};
+    data['amount'] = amount;
+    data['date'] = date;
+    return data;
   }
 }

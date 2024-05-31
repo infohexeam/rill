@@ -185,18 +185,14 @@ class Payment {
   String? paymentDate;
   bool isDue;
   String? DateChange() {
-    if (date == null) {
-      return '';
-    } else {
-      // var formatterTime = DateFormat('kk:mm');
-      var inputFormat = DateFormat("yyyy-MM-dd hh:mm:ss");
-      var formatterDate = DateFormat('dd-MM-yyyy');
-      var inputDate = inputFormat.parse(date.toString());
+    // var formatterTime = DateFormat('kk:mm');
+    var inputFormat = DateFormat("yyyy-MM-dd hh:mm:ss");
+    var formatterDate = DateFormat('dd-MM-yyyy');
+    var inputDate = inputFormat.parse(date.toString());
 
-      String actualDate = formatterDate.format(inputDate);
-      return actualDate.toString();
+    String actualDate = formatterDate.format(inputDate);
+    return actualDate.toString();
     }
-  }
 
   String? paymentDateChange() {
     if (paymentDate == null) {

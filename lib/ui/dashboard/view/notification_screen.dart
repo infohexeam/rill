@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -58,7 +57,7 @@ class NotificationScreen extends StatelessWidget {
               ),
             ),
           ),
-          body: SingleChildScrollView(physics:  BouncingScrollPhysics(),
+          body: SingleChildScrollView(physics:  const BouncingScrollPhysics(),
             child: Column(
               children: [
                 logic.rfcnotificationCount.value > 0

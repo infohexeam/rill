@@ -3,13 +3,10 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/src/bindings_interface.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:rill_repository/ui/otp_screen/bind/otp_verification_controller.dart';
 
 import '../../../Utils/app_routes.dart';
 import '../../../Utils/network_handler.dart';
-import '../model/error_response.dart';
 import '../model/otp_model.dart';
 import '../model/otp_receive_model.dart';
 

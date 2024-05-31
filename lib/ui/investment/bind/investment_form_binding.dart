@@ -40,25 +40,25 @@ class InvestmentFormController extends GetxController {
 
   List<DateTime> dates = [
     DateTime.now(),
-    DateTime.now().add(Duration(days: 30)),
-    DateTime.now().add(Duration(days: 60)),
-    DateTime.now().add(Duration(days: 90)),
-    DateTime.now().add(Duration(days: 120)),
-    DateTime.now().add(Duration(days: 150)),
-    DateTime.now().add(Duration(days: 180)),
-    DateTime.now().add(Duration(days: 210)),
-    DateTime.now().add(Duration(days: 240)),
-    DateTime.now().add(Duration(days: 270)),
-    DateTime.now().add(Duration(days: 300)),
-    DateTime.now().add(Duration(days: 320)),
+    DateTime.now().add(const Duration(days: 30)),
+    DateTime.now().add(const Duration(days: 60)),
+    DateTime.now().add(const Duration(days: 90)),
+    DateTime.now().add(const Duration(days: 120)),
+    DateTime.now().add(const Duration(days: 150)),
+    DateTime.now().add(const Duration(days: 180)),
+    DateTime.now().add(const Duration(days: 210)),
+    DateTime.now().add(const Duration(days: 240)),
+    DateTime.now().add(const Duration(days: 270)),
+    DateTime.now().add(const Duration(days: 300)),
+    DateTime.now().add(const Duration(days: 320)),
   ];
   List<DateTime> datesRpc = [
     DateTime.now(),
-    DateTime.now().add(Duration(days: 30)),
-    DateTime.now().add(Duration(days: 60)),
-    DateTime.now().add(Duration(days: 90)),
-    DateTime.now().add(Duration(days: 120)),
-    DateTime.now().add(Duration(days: 150)),
+    DateTime.now().add(const Duration(days: 30)),
+    DateTime.now().add(const Duration(days: 60)),
+    DateTime.now().add(const Duration(days: 90)),
+    DateTime.now().add(const Duration(days: 120)),
+    DateTime.now().add(const Duration(days: 150)),
   ];
 
 

@@ -40,7 +40,7 @@ class UpdateKycScreen extends StatelessWidget {
                         Text(
                           'KYC',
                           style: Constants.customStyle(
-                              32.0, Color(0xff2D72F6), FontWeight.bold),
+                              32.0, const Color(0xff2D72F6), FontWeight.bold),
                         ),
                       ],
                     ),
@@ -80,7 +80,6 @@ class UpdateKycScreen extends StatelessWidget {
                         } else {
                           Get.toNamed(Routes.investmentplan);
                         }
-                        ;
                       },
                       child: Container(
                         decoration: BoxDecoration(

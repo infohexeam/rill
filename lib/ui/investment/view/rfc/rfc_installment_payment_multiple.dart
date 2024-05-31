@@ -328,7 +328,7 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Form(
@@ -346,7 +346,7 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                                   return Container(
                                       width: size.width,
                                       height: 55,
-                                      margin: EdgeInsets.only(bottom: 15),
+                                      margin: const EdgeInsets.only(bottom: 15),
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(5),
                                         border:
@@ -383,8 +383,9 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                                                                             days:
                                                                                 180)));
                                                                 if (newDate ==
-                                                                    null)
+                                                                    null) {
                                                                   return;
+                                                                }
                                                                 setState(() {
                                                                   date =
                                                                       newDate;
@@ -441,7 +442,7 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                                                                   } else {
                                                                     int n = int
                                                                         .parse(
-                                                                            value!);
+                                                                            value);
                                                                     int multipleOf =
                                                                         500;
 
@@ -554,8 +555,9 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                                                                     },
                                                                   );
                                                                   if (newDate ==
-                                                                      null)
+                                                                      null) {
                                                                     return;
+                                                                  }
                                                                   setState(() {
                                                                     if (dateFo
                                                                         .contains(
@@ -652,66 +654,78 @@ class _RfcInstalmentsState extends State<RfcInstalments> {
                                   _formKey.currentState!.save();
                                   double sums = calculateSum();
                                   print('Sums: $sums');
-                                  if (logic.listCount >= 2)
+                                  if (logic.listCount >= 2) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[0].toString(),
                                         amount: int.parse(
                                             controllers[0].text.toString())));
-                                  if (logic.listCount >= 2)
+                                  }
+                                  if (logic.listCount >= 2) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[1].toString(),
                                         amount: int.parse(
                                             controllers[1].text.toString())));
-                                  if (logic.listCount >= 3)
+                                  }
+                                  if (logic.listCount >= 3) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[2].toString(),
                                         amount: int.parse(
                                             controllers[2].text.toString())));
-                                  if (logic.listCount >= 4)
+                                  }
+                                  if (logic.listCount >= 4) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[3].toString(),
                                         amount: int.parse(
                                             controllers[3].text.toString())));
-                                  if (logic.listCount >= 5)
+                                  }
+                                  if (logic.listCount >= 5) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[4].toString(),
                                         amount: int.parse(
                                             controllers[4].text.toString())));
-                                  if (logic.listCount >= 6)
+                                  }
+                                  if (logic.listCount >= 6) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[5].toString(),
                                         amount: int.parse(
                                             controllers[5].text.toString())));
-                                  if (logic.listCount >= 7)
+                                  }
+                                  if (logic.listCount >= 7) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[6].toString(),
                                         amount: int.parse(
                                             controllers[6].text.toString())));
-                                  if (logic.listCount >= 8)
+                                  }
+                                  if (logic.listCount >= 8) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[7].toString(),
                                         amount: int.parse(
                                             controllers[7].text.toString())));
-                                  if (logic.listCount >= 9)
+                                  }
+                                  if (logic.listCount >= 9) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[8].toString(),
                                         amount: int.parse(
                                             controllers[8].text.toString())));
-                                  if (logic.listCount >= 10)
+                                  }
+                                  if (logic.listCount >= 10) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[9].toString(),
                                         amount: int.parse(
                                             controllers[9].text.toString())));
-                                  if (logic.listCount >= 11)
+                                  }
+                                  if (logic.listCount >= 11) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[10].toString(),
                                         amount: int.parse(
                                             controllers[10].text.toString())));
-                                  if (logic.listCount >= 12)
+                                  }
+                                  if (logic.listCount >= 12) {
                                     logic.paymentStatus.add(DataRequest(
                                         date: apiDate[11].toString(),
                                         amount: int.parse(
                                             controllers[11].text.toString())));
+                                  }
                                   print(
                                       "Payment Status:::::${logic.paymentStatus.toList()}");
 

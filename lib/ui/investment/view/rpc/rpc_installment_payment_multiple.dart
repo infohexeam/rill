@@ -269,7 +269,7 @@ class _RpcInstalmentsState extends State<RpcInstalments> {
                                                     FontWeight.bold)),
                                           ),
                                         )
-                                      : SizedBox(),
+                                      : const SizedBox(),
                                 ),
                               ),
                               logic.listCountRpc != 6
@@ -325,7 +325,7 @@ class _RpcInstalmentsState extends State<RpcInstalments> {
                                         ),
                                       ),
                                     )
-                                  : SizedBox(),
+                                  : const SizedBox(),
                             ],
                           ),
                           const SizedBox(
@@ -650,42 +650,48 @@ class _RpcInstalmentsState extends State<RpcInstalments> {
                                     double sums = calculateSum();
                                     print('Sums: $sums');
 
-                                    if (logic.listCountRpc >= 2)
+                                    if (logic.listCountRpc >= 2) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[0].toString(),
                                           amount: int.parse(controllersRpc[0]
                                               .text
                                               .toString())));
-                                    if (logic.listCountRpc >= 2)
+                                    }
+                                    if (logic.listCountRpc >= 2) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[1].toString(),
                                           amount: int.parse(controllersRpc[1]
                                               .text
                                               .toString())));
-                                    if (logic.listCountRpc >= 3)
+                                    }
+                                    if (logic.listCountRpc >= 3) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[2].toString(),
                                           amount: int.parse(controllersRpc[2]
                                               .text
                                               .toString())));
-                                    if (logic.listCountRpc >= 4)
+                                    }
+                                    if (logic.listCountRpc >= 4) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[3].toString(),
                                           amount: int.parse(controllersRpc[3]
                                               .text
                                               .toString())));
-                                    if (logic.listCountRpc >= 5)
+                                    }
+                                    if (logic.listCountRpc >= 5) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[4].toString(),
                                           amount: int.parse(controllersRpc[4]
                                               .text
                                               .toString())));
-                                    if (logic.listCountRpc >= 6)
+                                    }
+                                    if (logic.listCountRpc >= 6) {
                                       logic.paymentStatusRpc.add(DataRequestRpc(
                                           date: apiDate[5].toString(),
                                           amount: int.parse(controllersRpc[5]
                                               .text
                                               .toString())));
+                                    }
 
                                     print(
                                         "Payment Status:::::${logic.paymentStatusRpc.toList()}");

@@ -76,7 +76,7 @@ class DetailsScreenState extends State<DetailsScreen> {
                                   .toUpperCase() ??
                               "Full Name",
                           hintStyle: Constants.customStyle(
-                              16.0, Color(0xff888888), FontWeight.normal),
+                              16.0, const Color(0xff888888), FontWeight.normal),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5),
                               borderSide:
@@ -135,11 +135,11 @@ class DetailsScreenState extends State<DetailsScreen> {
                             child: Text(
                               '+91 | ',
                               style: Constants.customStyle(
-                                  16.0, Color(0xff888888), FontWeight.normal),
+                                  16.0, const Color(0xff888888), FontWeight.normal),
                             ),
                           ),
                           hintStyle: Constants.customStyle(
-                              16.0, Color(0xff888888), FontWeight.normal),
+                              16.0, const Color(0xff888888), FontWeight.normal),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5),
                               borderSide:

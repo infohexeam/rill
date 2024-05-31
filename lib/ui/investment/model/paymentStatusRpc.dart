@@ -11,9 +11,9 @@ class RpcModel {
   }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['payments'] = payments?.map((e)=>e.toJson()).toList();
-    return _data;
+    final data = <String, dynamic>{};
+    data['payments'] = payments?.map((e)=>e.toJson()).toList();
+    return data;
   }
 }
 
@@ -30,9 +30,6 @@ class DataRequestRpc {
     amount = json['amount'];
   }
   String? dateChange() {
-    if(date==null){
-      return '';
-    }
     var formatterDate = DateFormat('dd-MM-yyyy');
     // var formatterTime = DateFormat('kk:mm');
     var inputFormat = DateFormat('yyyy-MM-dd');
@@ -44,9 +41,9 @@ class DataRequestRpc {
 
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['date'] = date;
-    _data['amount'] = amount;
-    return _data;
+    final data = <String, dynamic>{};
+    data['date'] = date;
+    data['amount'] = amount;
+    return data;
   }
 }

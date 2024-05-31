@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:rill_repository/Utils/colors_list.dart';
 
 import '../../../constants/constant.dart';

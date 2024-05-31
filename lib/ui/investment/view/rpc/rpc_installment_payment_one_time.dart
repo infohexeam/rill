@@ -59,7 +59,7 @@ class _RpcOneTimeState extends State<RpcOneTime> {
             ),
           ),
         ),
-        body: Container(
+        body: SizedBox(
           height: size.height,
           child: Stack(
             children: [
@@ -349,7 +349,7 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                                               // amountValue == true
                                               //     ?
                                               setState(() {
-                                                if (logic.payments!.isEmpty) {
+                                                if (logic.payments.isEmpty) {
                                                   // logic.addTypes('${date.day}-${date.month}-${date.year}', privilegecontroller.privilegecardexistModel?.data.privileCardExists==true?'Rs. 10500':   'Rs. 12500');
                                                   logic.addRfc(
                                                       '${date.year}-${date.month}-${date.day}',
@@ -442,13 +442,13 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                       SizedBox(
                         height: size.height * .2,
                         child: ListView.builder(
-                            itemCount: logic.payments!.length == 0 ? 0 : 1,
+                            itemCount: logic.payments.isEmpty ? 0 : 1,
                             physics: const NeverScrollableScrollPhysics(),
                             itemBuilder: (BuildContext context, index) {
                               return Padding(
                                 padding:
                                     const EdgeInsets.only(left: 15, right: 15),
-                                child: Container(
+                                child: SizedBox(
                                   height: size.height * .2,
                                   width: size.width,
                                   child: Stack(
@@ -483,7 +483,7 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                                                                 FontWeight
                                                                     .normal)),
                                                     Text(
-                                                        logic.payments![index]
+                                                        logic.payments[index]
                                                                 .dateChange() ??
                                                             '',
                                                         style: Constants
@@ -498,7 +498,7 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                                                   height: 10,
                                                 ),
                                                 Text(
-                                                    logic.payments?[index]
+                                                    logic.payments[index]
                                                             .amount
                                                             .toString() ??
                                                         '',
@@ -550,7 +550,7 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(bottom: 30),
+                padding: const EdgeInsets.only(bottom: 30),
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: GetBuilder<PrivilegeCardController>(
@@ -559,8 +559,8 @@ class _RpcOneTimeState extends State<RpcOneTime> {
                           ? InkWell(
                               onTap: () {
                                 print(
-                                    "Amount :::: ${logic.payments![0].amount}");
-                                print("date :::: ${logic.payments![0].date}");
+                                    "Amount :::: ${logic.payments[0].amount}");
+                                print("date :::: ${logic.payments[0].date}");
                                 logic.rpcSingle(
                                     context,
                                     '${date.year}-${date.month}-${date.day}',

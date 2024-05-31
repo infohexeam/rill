@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 import 'package:whatsapp_unilink/whatsapp_unilink.dart';
 
 import '../../../Utils/colors_list.dart';
@@ -29,7 +28,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
           icon: const Icon(Icons.arrow_back, size: 30)),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: Container(
+        child: SizedBox(
           height: size.height,
           width: size.width,
           child: Stack(
@@ -157,7 +156,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                               height: 25,
                               width: 25,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -192,7 +191,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                               height: 20,
                               width: 20,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(

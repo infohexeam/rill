@@ -9,7 +9,6 @@ import 'package:rill_repository/ui/kyc_form/view/upload_class.dart';
 
 import '../../../Utils/app_routes.dart';
 import '../../../Utils/colors_list.dart';
-import '../../home_screen/bind/homescreen_binding.dart';
 import '../bind/kyc_form_binding.dart';
 
 import 'dart:io';
@@ -490,7 +489,7 @@ class _KycDetailsFormState extends State<KycDetailsForm> {
                                 ? InkWell(
                                     onTap: () {
                                       setState(() {
-                                        print('fjf ${tmpaadhar}');
+                                        print('fjf $tmpaadhar');
 
                                         var mimeType = tmp_aadhar != null
                                             ? lookupMimeType(tmpaadhar!.path)
@@ -2220,7 +2219,7 @@ class _KycDetailsFormState extends State<KycDetailsForm> {
                         Get.offAllNamed(Routes.homescreen);
                         // Get.back();
                       },
-                      child: Icon(Icons.arrow_back,size: 30,)),
+                      child: const Icon(Icons.arrow_back,size: 30,)),
                   const SizedBox(
                     height: 15,
                   ),
@@ -2259,20 +2258,20 @@ class _KycDetailsFormState extends State<KycDetailsForm> {
                   onTap: (){
                     Get.back();
                   },
-                  child: Container(
+                  child: SizedBox(
                     height: 14,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Update later',style: Constants.customStyle(18.0, Colors.white, FontWeight.normal),),
-                        SizedBox(width: 5,),
-                        Icon(Icons.double_arrow,size: 35,),
+                        const SizedBox(width: 5,),
+                        const Icon(Icons.double_arrow,size: 35,),
 
                       ],
                     ),
                   ),
                 ),
-              ):SizedBox()
+              ):const SizedBox()
             ],
           ),
           body: RefreshIndicator(
@@ -2291,7 +2290,7 @@ class _KycDetailsFormState extends State<KycDetailsForm> {
             child: SizedBox(
               height: size.height,
               child: SingleChildScrollView(
-                physics:  BouncingScrollPhysics(),
+                physics:  const BouncingScrollPhysics(),
                 child: GetBuilder<KycFormController>(
                   builder: (logic) {
                     return Column(

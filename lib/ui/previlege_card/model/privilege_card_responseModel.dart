@@ -15,10 +15,10 @@ class PrivilegeCardResponseModel {
   }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['message'] = message;
-    _data['error'] = error;
-    _data['errors'] = errors;
-    return _data;
+    final data = <String, dynamic>{};
+    data['message'] = message;
+    data['error'] = error;
+    data['errors'] = errors;
+    return data;
   }
 }
